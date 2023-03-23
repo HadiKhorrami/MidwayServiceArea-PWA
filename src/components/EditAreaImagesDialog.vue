@@ -65,8 +65,8 @@ export default {
     deleteImage(id) {
       const formData = new FormData();
       formData.append('documentId', id);
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/delete-area-document':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareainfo/delete-area-document':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         for (var i = 0;i<this.editResponse.documents.length;i++){
           if (response.data[0].id===this.editResponse.documents[i].documentId) {
@@ -117,8 +117,8 @@ export default {
       const formData = new FormData();
       formData.append('midwayServiceAreaId', this.editResponse.midwayServiceAreaInfoId);
       formData.append('docs', JSON.stringify(this.documents));
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/add-midway-service-area-documents':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareainfo/add-midway-service-area-documents':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         this.overlay = false;
         if(response.data) {

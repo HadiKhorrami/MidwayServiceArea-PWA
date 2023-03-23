@@ -67,8 +67,8 @@ export default {
       formData.append('mobileNumber',this.getCookie("phone"));
       formData.append('firstName',this.firstName);
       formData.append('lastName',this.lastName);
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.person/save-profile':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.person/save-profile':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         if(response.data[0]){
           if(this.fromProfile = false) {

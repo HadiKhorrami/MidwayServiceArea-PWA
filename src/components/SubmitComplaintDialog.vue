@@ -154,11 +154,11 @@ export default {
       formData.append('mobile', this.mobile);
       formData.append('message', "");
       formData.append('locale', 'fa_IR');
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareacomplaint/add-midway-service-area-complaint':{}}");
+      formData.append('cmd', "{'/*************.midwayareacomplaint/add-midway-service-area-complaint':{}}");
       for (var pair of formData.entries()) {
         console.log(pair[0]+ ', ' + pair[1]);
       }
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      axios.post('*************', formData,
       ).then(response => {
         this.snackText = this.$t('SubmitComplaintDialog.Success') + " " + response.data[0].midwayServiceAreaComplaintId;
         this.snackIcon = "mdi-check-circle"
@@ -205,8 +205,8 @@ export default {
          );
 
       const formData = new FormData();
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/get-wms-map-url':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareainfo/get-wms-map-url':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         this.overlay = false;
         this.response = response;

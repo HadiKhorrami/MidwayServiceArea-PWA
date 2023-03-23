@@ -118,8 +118,8 @@ export default {
       const formData = new FormData();
       formData.append('locale', "fa_IR");
       formData.append('dateInMiliseconds', "true");
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareatype/get-mid-way-service-area-types-with-documents':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareatype/get-mid-way-service-area-types-with-documents':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         this.allTypes = response.data;
         for (let i = 0; i < response.data.length; i++) {
@@ -345,8 +345,8 @@ export default {
       // }
       const formData = new FormData();
       formData.append('serviceAreaJson', JSON.stringify(this.serviceAreaJson));
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/update-midway-service-area':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareainfo/update-midway-service-area':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         this.snackColor = "success";
         this.snackText = this.$t("SnackBar.DetailsEdited");

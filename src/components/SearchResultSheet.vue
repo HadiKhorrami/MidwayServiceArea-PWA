@@ -123,8 +123,8 @@ export default {
       formData.append('id', id);
       formData.append('locale', "fa_IR");
       formData.append('dateInMiliseconds', true);
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/get-mid-way-service-area-with-documents-and-services-and-rate':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,{timeout: 15000}
+      formData.append('cmd', "{'/*************.midwayareainfo/get-mid-way-service-area-with-documents-and-services-and-rate':{}}");
+      axios.post('*************', formData,{timeout: 15000}
       ).then(response => {
         console.log(response)
         th.overlay = false
@@ -326,8 +326,8 @@ export default {
       formData.append('userId', this.getCookie("phone"));
       formData.append('midwarServiceAreaInfoId', id);
       formData.append('locale', "fa_IR");
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayarearating/get-midway-service-area-rating':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayarearating/get-midway-service-area-rating':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         response.data.forEach(e=>{
           if(e.midwayServiceAreaInfoId===id){
@@ -351,8 +351,8 @@ export default {
       if(this.getCookie("phone")!='undefined' && this.getCookie("phone") != undefined) {
         const formData = new FormData();
         formData.append('mobileNumber', this.getCookie("phone"));
-        formData.append('cmd', "{'/MidwayServiceArea-portlet.person/get-person-with-picture':{}}");
-        axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+        formData.append('cmd', "{'/*************.person/get-person-with-picture':{}}");
+        axios.post('*************', formData,
         ).then(response => {
           this.favoriteAreas = response.data[0].interestedAreas.split(",");
           document.cookie = "userId=" + response.data[0].userId

@@ -1361,8 +1361,8 @@ export default {
       const formData = new FormData();
       formData.append('locale', "fa_IR");
       formData.append('dateInMiliseconds', "true");
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareatype/get-mid-way-service-area-types-with-documents':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareatype/get-mid-way-service-area-types-with-documents':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         for (let i = 0; i < response.data.length; i++) {
           if (response.data[i].parentMidwayServiceAreaServicesId === response.data[i].midwayServiceAreaTypeId) {
@@ -1457,8 +1457,8 @@ export default {
       formData.append('userId', this.getCookie("phone"));
       formData.append('midwarServiceAreaInfoId', id);
       formData.append('locale', "fa_IR");
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayarearating/get-midway-service-area-rating':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayarearating/get-midway-service-area-rating':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         response.data.forEach(e=>{
           if(e.midwayServiceAreaInfoId===id){
@@ -1625,8 +1625,8 @@ export default {
       if(this.getCookie("phone")!='undefined' && this.getCookie("phone") != undefined) {
         const formData = new FormData();
         formData.append('mobileNumber', this.getCookie("phone"));
-        formData.append('cmd', "{'/MidwayServiceArea-portlet.person/get-person-with-picture':{}}");
-        axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+        formData.append('cmd', "{'/*************.person/get-person-with-picture':{}}");
+        axios.post('*************', formData,
         ).then(response => {
           this.favoriteAreas = response.data[0].interestedAreas.split(",");
         }).catch(error => {

@@ -103,8 +103,8 @@ export default {
       formData.append('locale', "fa_IR");
       formData.append('companyId', "20155");
       formData.append('areaId', th.editResponse.midwayServiceAreaInfoId);
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareatype/get-sub-services':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareatype/get-sub-services':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         th.editResponse.services = response.data;
         console.log(response)
@@ -270,8 +270,8 @@ export default {
       const formData = new FormData();
       formData.append('locale', "fa_IR");
       formData.append('dateInMiliseconds', "true");
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareatype/get-mid-way-service-area-types-with-documents':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareatype/get-mid-way-service-area-types-with-documents':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         this.allTypes = response.data;
         console.log(response)

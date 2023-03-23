@@ -57,7 +57,7 @@ export default {
         formData.append('companyId', "20155");
         formData.append('screenName', this.screenName);
         formData.append('cmd', "{'/user/get-user-by-screen-name':{}}");
-        axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,{
+        axios.post('*************', formData,{
           auth: {
             username: this.screenName,
             password: this.password

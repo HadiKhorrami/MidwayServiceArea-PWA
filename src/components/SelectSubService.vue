@@ -109,8 +109,8 @@ export default {
         if (this.getCookie("isEdit")==="false") {
           const formData = new FormData();
           formData.append('serviceAreaJson', JSON.stringify(this.serviceAreaJson));
-          formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/add-midway-service-area':{}}");
-          axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+          formData.append('cmd', "{'/*************.midwayareainfo/add-midway-service-area':{}}");
+          axios.post('*************', formData,
           ).then(response => {
             this.addedResponse = response.data[0];
             console.log(this.addedResponse)
@@ -143,8 +143,8 @@ export default {
         formData.append('companyId', '20155');
         formData.append('areaId', this.editResponse.midwayServiceAreaInfoId);
         formData.append('subServices', serviceIds.slice(0,-1));
-        formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareadetail/set-sub-services':{}}");
-        axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+        formData.append('cmd', "{'/*************.midwayareadetail/set-sub-services':{}}");
+        axios.post('*************', formData,
         ).then(response => {
           if(response.data.length>0){
             this.snackColor = "success";

@@ -86,8 +86,8 @@ export default {
       const formData = new FormData();
       formData.append('midwayServiceAreaId', this.addedResponse.midwayServiceAreaInfoId);
       formData.append('docs', JSON.stringify(this.documents));
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/add-midway-service-area-documents':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareainfo/add-midway-service-area-documents':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         if(response.data) {
           if (response.data[0].documents.length > 0) {

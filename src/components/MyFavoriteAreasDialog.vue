@@ -82,8 +82,8 @@ export default {
       const formData = new FormData();
       formData.append('areaId', id);
       formData.append('mobileNumber',this.getCookie("phone"));
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.person/remove-from-favorite':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.person/remove-from-favorite':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         this.favoriteAreas = [];
         this.getPersonWithPicture();
@@ -102,8 +102,8 @@ export default {
       this.overlay = true;
         const formData = new FormData();
         formData.append('mobileNumber', this.getCookie("phone"));
-        formData.append('cmd', "{'/MidwayServiceArea-portlet.person/get-person-with-picture':{}}");
-        axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,{timeout:15000}
+        formData.append('cmd', "{'/*************.person/get-person-with-picture':{}}");
+        axios.post('*************', formData,{timeout:15000}
         ).then(response => {
           th.overlay = false
           this.favoriteAreas = [];
@@ -116,8 +116,8 @@ export default {
             formData.append('id', th.favoriteAreas[f]);
             formData.append('locale', "fa_IR");
             formData.append('dateInMiliseconds', true);
-            formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/get-mid-way-service-area-with-documents-and-services-and-rate':{}}");
-            axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+            formData.append('cmd', "{'/*************.midwayareainfo/get-mid-way-service-area-with-documents-and-services-and-rate':{}}");
+            axios.post('*************', formData,
             ).then(response => {
               th.overlay = false
               if (th.$i18n.locale === 'fa' && response.data[0].side === 1) {

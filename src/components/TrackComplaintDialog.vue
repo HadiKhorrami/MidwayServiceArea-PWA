@@ -53,8 +53,8 @@ export default {
         formData.append('companyId ', "20155 ");
         formData.append('mobileNumber ', this.getCookie("phone"));
         formData.append('locale', "fa_IR");
-        formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareacomplaint/get-midway-service-area-complaints-by-mobile-number':{}}");
-        axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,{
+        formData.append('cmd', "{'/*************.midwayareacomplaint/get-midway-service-area-complaints-by-mobile-number':{}}");
+        axios.post('*************', formData,{
           auth: {username: this.getCookie("managerScreenName"), password: this.getCookie("managerPassword")}}
         ).then(response => {
           for (var i in response.data) {

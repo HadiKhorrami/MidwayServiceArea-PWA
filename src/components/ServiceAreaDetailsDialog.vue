@@ -133,8 +133,8 @@ export default {
           console.log(this.getCookie("phone") + "///" + this.detail.midwayServiceAreaInfoId)
           formData.append('mobileNumber', this.getCookie("phone"));
           formData.append('areaId', this.detail.midwayServiceAreaInfoId);
-          formData.append('cmd', "{'/MidwayServiceArea-portlet.person/add-to-favorite':{}}");
-          axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+          formData.append('cmd', "{'/*************.person/add-to-favorite':{}}");
+          axios.post('*************', formData,
           ).then(response => {
             if (response.data) {
               this.saveColor = 'green';
@@ -156,8 +156,8 @@ export default {
           const formData = new FormData();
           formData.append('mobileNumber', this.getCookie("phone"));
           formData.append('areaId', this.detail.midwayServiceAreaInfoId);
-          formData.append('cmd', "{'/MidwayServiceArea-portlet.person/remove-from-favorite':{}}");
-          axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+          formData.append('cmd', "{'/*************.person/remove-from-favorite':{}}");
+          axios.post('*************', formData,
           ).then(response => {
             if (response.data) {
               this.saveColor = '';
@@ -190,8 +190,8 @@ export default {
           formData.append('locale', "fa_IR");
           formData.append('midwarServiceAreaInfoId', this.detail.midwayServiceAreaInfoId);
           formData.append('companyId', "20155");
-          formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayarearating/get-area-all-rating':{}}");
-          axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+          formData.append('cmd', "{'/*************.midwayarearating/get-area-all-rating':{}}");
+          axios.post('*************', formData,
           ).then(response => {
             for (var i = 0; i < response.data.length; i++) {
               response.data[i]["islike"] = false;
@@ -227,8 +227,8 @@ export default {
         const formData = new FormData();
         formData.append('areaId', this.detail.midwayServiceAreaInfoId);
         formData.append('mobileNumber', this.getCookie("phone"));
-        formData.append('cmd', "{'/MidwayServiceArea-portlet.person/has-access-to-edit-delete-area-with-mobile':{}}");
-        axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+        formData.append('cmd', "{'/*************.person/has-access-to-edit-delete-area-with-mobile':{}}");
+        axios.post('*************', formData,
         ).then(response => {
           if(response.data[0].hasAccess==="false"){
             this.snackColor = "red accent-2";
@@ -270,8 +270,8 @@ export default {
       formData.append('companyId', "20155");
       formData.append('areaId', this.detail.midwayServiceAreaInfoId);
       formData.append('locale', "fa_IR");
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareatype/get-sub-services':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,{timeout: 5000}
+      formData.append('cmd', "{'/*************.midwayareatype/get-sub-services':{}}");
+      axios.post('*************', formData,{timeout: 5000}
       ).then(response => {
         this.overlay = false;
         for(var i = 0;i<response.data.length;i++){

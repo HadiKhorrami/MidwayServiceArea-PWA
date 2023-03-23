@@ -195,8 +195,8 @@ export default {
       );
 
       const formData = new FormData();
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/get-wms-map-url':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareainfo/get-wms-map-url':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         document.cookie = "response="+ response.data;
         this.setURLResponse();
@@ -356,8 +356,8 @@ export default {
       formData.append('id', this.midwayserviceareainfoid);
       formData.append('locale', "fa_IR");
       formData.append('dateInMiliseconds', true);
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/get-mid-way-service-area-with-documents-and-services-and-rate':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareainfo/get-mid-way-service-area-with-documents-and-services-and-rate':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         console.log(response)
         this.overlay = false;
@@ -424,8 +424,8 @@ export default {
       this.UnsubscribeToDeleteDialog = false;
       const formData = new FormData();
       formData.append('midwayServiceAreaId', this.midwayserviceareainfoid);
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/delete-midway-service-area':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareainfo/delete-midway-service-area':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         this.snackColor = "red accent-2";
         this.snackText = this.$t("SnackBar.AreaDeleted");
@@ -501,8 +501,8 @@ export default {
           console.log(th.serviceAreaJson)
           const formData = new FormData();
           formData.append('serviceAreaJson', JSON.stringify(th.serviceAreaJson));
-          formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareainfo/update-midway-service-area':{}}");
-          axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+          formData.append('cmd', "{'/*************.midwayareainfo/update-midway-service-area':{}}");
+          axios.post('*************', formData,
           ).then(response => {
             this.snackColor = "success";
             this.snackText = this.$t("SnackBar.DetailsEdited");
@@ -642,8 +642,8 @@ export default {
       const formData = new FormData();
       formData.append('locale', "fa_IR");
       formData.append('dateInMiliseconds', "true");
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayareatype/get-mid-way-service-area-types-with-documents':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayareatype/get-mid-way-service-area-types-with-documents':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         this.allTypes = response.data;
         console.log(response)
@@ -698,8 +698,8 @@ export default {
       const formData = new FormData();
       formData.append('areaId', id);
       formData.append('mobileNumber', this.getCookie("phone"));
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.person/has-access-to-edit-delete-area-with-mobile':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData, {
+      formData.append('cmd', "{'/*************.person/has-access-to-edit-delete-area-with-mobile':{}}");
+      axios.post('*************', formData, {
         auth:{username: this.getCookie("managerScreenName"), password: this.getCookie("managerPassword")}}
       ).then(response => {
         if(response.data[0].hasAccess==="false"){

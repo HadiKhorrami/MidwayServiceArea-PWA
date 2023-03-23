@@ -65,8 +65,8 @@ export default {
         const formData = new FormData();
         formData.append('midwayServiceAreaRatingId', id);
         formData.append('offset',1);
-        formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayarearating/like-rating':{}}");
-        axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+        formData.append('cmd', "{'/*************.midwayarearating/like-rating':{}}");
+        axios.post('*************', formData,
         ).then(response => {
           for(var i in this.otherRatingArray){
             if(this.otherRatingArray[i].midwayServiceAreaRatingId===id){
@@ -93,8 +93,8 @@ export default {
         const formData = new FormData();
         formData.append('midwayServiceAreaRatingId', id);
         formData.append('offset',1);
-        formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayarearating/dislike-rating':{}}");
-        axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+        formData.append('cmd', "{'/*************.midwayarearating/dislike-rating':{}}");
+        axios.post('*************', formData,
         ).then(response => {
           for(var i in this.otherRatingArray){
             if(this.otherRatingArray[i].midwayServiceAreaRatingId===id){

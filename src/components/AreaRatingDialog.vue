@@ -78,8 +78,8 @@ export default {
       formData.append('stars', this.totalRating.toFixed());
       formData.append('desc', this.desc);
       formData.append('locale', "fa_IR");
-      formData.append('cmd', "{'/MidwayServiceArea-portlet.midwayarearating/add-midway-service-area-rating':{}}");
-      axios.post('https://restareas.rmto.ir/api/jsonws/invoke', formData,
+      formData.append('cmd', "{'/*************.midwayarearating/add-midway-service-area-rating':{}}");
+      axios.post('*************', formData,
       ).then(response => {
         if(response.data.length===1){
           this.snackColor = "success";
