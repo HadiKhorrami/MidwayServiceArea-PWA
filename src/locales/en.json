@@ -1,0 +1,222 @@
+{
+  "NavTitle":"Road Maintenance and Transportation Organization Trip Services Management and tirpark",
+  "OverFlowSearch": "Search",
+  "Nav": {
+    "LoginAsManager": "Login As Manager",
+    "Language": "Language",
+    "PrayerTimes": "Prayer Times",
+    "EssentialmPhoneNumbers": "Essential Phone Numbers",
+    "SubmitComplaint": "Submit Complaint",
+    "TrackComplaint": "Track Complaint",
+    "ShareWithFriends": "Share With Friends",
+    "Rating/ErrorReport": "Rating/Error Report",
+    "Help": "Help",
+    "AboutUs": "About Us",
+    "Exit": "Exit"
+  },
+  "BottomNavigation":{
+    "Profile": "Profile",
+    "Favorite": "Favorite",
+    "Edit": "Edit",
+    "141": "141"
+  },
+  "LoginForm":{
+    "EnterPhone": "Enter Your Phone Number",
+    "BtnSendCode": "Send Confirmation Code",
+    "EnterCode": "Enter Confirmation Code",
+    "TimeOutDesc": "If you do not receive the SMS, select the resend button",
+    "BtnLogIn": "Log In",
+    "BtnSendAgain": "Resend",
+    "BtnChangePhone": "Change Phone Number",
+    "EmptyError": "Number not Entered"
+  },
+  "SearchSheet":{
+    "NearMe": "NEAR ME",
+    "Near": "NEAR",
+    "Between": "BETWEEN",
+    "SearchRadius": "Search Radius :",
+    "EnterCityName": "Enter City Name",
+    "ChooseOnMap": "Choose On Map",
+    "EnterFirstCityName": "Enter First City Name",
+    "EnterSecondCityName": "Enter Second City Name",
+    "SelectServices": "Select Services",
+    "Search": "Search",
+    "EmptyCityError": "Select City",
+    "EmptyFirstCityError": "Select First City",
+    "EmptySecondCityError": "Select Second City"
+  },
+  "ServiceTypes":{
+    "PrayerRoom": "Prayer Room",
+    "BusinessUnits": "Business Units",
+    "Restaurant": "Restaurant",
+    "PetrolStation": "Petrol Station",
+    "CommunicationServices": "Communication Services",
+    "AccommodationServices": "Accommodation Services",
+    "BankingServices": "Banking Services",
+    "Toilets": "Toilets",
+    "Parking": "Parking",
+    "SportsServices": "Sports Services",
+    "HealthService": "Health Service",
+    "WelfareAmenities": "Welfare Amenities",
+    "TirPark": "TirPark",
+    "SafetyServices": "Safety Services",
+    "CarService": "Car Service"
+  },
+
+  "ManagerLoginDialog": {
+    "HeaderText": "For Road Maintenance and Transportation Organization's staffs",
+    "ScreenName": "Screen Name",
+    "Password": "Password",
+    "SignIn": "SIGN IN"
+  },
+  "LanguageDialog": {
+    "Persian": "Persian",
+    "Arabic": "Arabic",
+    "English": "English"
+  },
+  "PrayerTimeDialog": {
+    "PrayerTime": "Prayer Times",
+    "Fajr": "Fajr",
+    "Sunrise": "Sunrise",
+    "Dhuhr": "Dhuhr",
+    "Asr": "Asr",
+    "Sunset": "Sunset",
+    "Maghrib": "Maghrib",
+    "Isha": "Isha",
+    "Midnight": "Midnight"
+  },
+  "EssentialPhonesDialog": {
+    "RoadInfos": "Road Infos",
+    "InformationMinistry": "Information Ministry",
+    "Emergency": "Emergency",
+    "WeatherInfos": "Weather Infos",
+    "Police": "Police",
+    "IranKhodroCarService": "Iran Khodro Car Service",
+    "IranKhodroCarService": "Iran Khodro Car Service",
+    "MidwayServices": "Midway Services",
+    "Fireman": "Fireman",
+    "RailRoad": "RailRoad",
+    "FirstAid": "First Aid",
+    "FlightInfos": "Flight Infos",
+    "ImamKhomeyniAirportFlightInfos": "Imam Khomeyni Airport Flight Infos"
+  } ,
+  "SubmitComplaintDialog": {
+    "AreaName": "Area Name",
+    "SelectFromMap": "Select From Map",
+    "ManagerMobile": "Manager Mobile",
+    "Email": "Email",
+    "Title": {
+      "PrayerRoom": "Prayer Room",
+      "W.C": "W.C",
+      "RestFacilities": "Rest Facilities",
+      "Others": "Others"
+    },
+    "Description": "Description",
+    "AddImage": "Add violation image document",
+    "Submit": "SUBMIT",
+    "Success" : "Your complaint has been registered. Tracking Code :",
+    "Close" : "Close"
+  },
+  "TrackComplaint": {
+    "ComplaintFrom": "Complaint From ",
+    "Area": "Area ",
+    "WithTrackingCode": "With Tracking Code ",
+    "State": "State : ",
+    "Result": "Result : ",
+    "NoComplaints": "No Complaints"
+  },
+  "SubmitCommentDialog": {
+    "VerySatisfied": "Very Satisfied",
+    "Satisfied": "Satisfied",
+    "NotBad": "Not Bad",
+    "DisSatisfied": "DisSatisfied",
+    "VeryDisSatisfied": "Very DisSatisfied",
+    "CallNumber": "Call Number",
+    "Opinion": "Write Your Opinion About This App",
+    "Send": "Send"
+  },
+  "FillProfileDialog": {
+    "HeaderText": "Please fill your profile",
+    "FirstName": "First Name",
+    "LastName": "Last Name",
+    "Save": "Save"
+  },
+  "Profile": {
+    "RemovePhoto": "Remove Photo",
+    "Rating": "Rating",
+    "Favorites": "Favorites",
+    "Areas": "Areas",
+    "ChangeSpecification": "Change Specification",
+    "MyServiceAreas": "My Service Areas",
+    "MyInterestedAreas": "My Interested Areas",
+    "ReceivedComplaints": "Received Complaints",
+    "Exit": "Exit"
+  },
+  "AreaDetail": {
+      "Name" : "Name",
+      "Side" : "Side",
+      "Distance" : "Distance",
+      "Directions" : "Directions",
+      "MoreInfo" : "More info",
+      "Rating" : "No Rating",
+      "DistanceToYou": "Distance to you",
+      "Kilometers": "kilometers",
+    "Close": "Close"
+  },
+  "ServiceAreaDetailsDialog": {
+    "ServiceArea" : "Service Area",
+    "TirPark" : "Tir Park",
+    "Save" : "Save",
+    "Rating" : "Rating",
+    "Edit" : "Edit",
+    "Share": "Share",
+    "ManagerName": "Manager Name",
+    "Axis": "Axis",
+    "Kilometers": "Kilometers",
+    "ContactManager": "Contact Manager"
+  },
+  "AreaRatingDialog": {
+    "Title": "How much you satisfied wity services of this area?",
+    "Comment" : "Comment",
+    "YourRating" : "Your Rating",
+    "Confirm" : "Confirm"
+  },
+  "SnackBar": {
+    "PleaseLogin": "Please login",
+    "PleaseLoginAsManager": "Please login as a manager",
+    "EnterConfirmCode": "Please Enter Confirm Code",
+    "SelectArea": "Please select area",
+    "PhotoAdded": "Photo added",
+    "PhotosAdded": "Photos added",
+    "AreaAdded": "The Area has been successfully added",
+    "AreaDeleted": "The Area has been successfully deleted",
+    "NetworkError": "Error in Network",
+    "OperationError": "Error in operation",
+    "RequireFields": "Select or fill required fields",
+    "DetailsEdited": "Details edited",
+    "RegisterVote": "Your vote has been saved",
+    "DeletePhoto": "The photo was successfully deleted",
+    "ServicesEdited": "Services successfully edited",
+    "FavoriteAdded": "Added to favorite successfully",
+    "FavoriteDeleted": "Deleted from favorite successfully",
+    "EditAccess": "You do not have access to edit",
+    "TurnOnLocation": "Please turn on Your location"
+  },
+  "MyAreasDialog": {
+    "Side": "Side : ",
+    "Edit" : "Edit"
+  },
+  "MyFavoriteAreasDialog": {
+    "Side": "Side : ",
+    "Delete" : "Delete",
+    "Show" : "Show",
+    "NoArea": "َArea not found"
+  },
+  "RoutingDialog": {
+    "NoDirection": "No Route Found",
+    "NoLocation": "No Location Found",
+    "Time": "Time",
+    "Distance": "Distance",
+    "Close": "Close"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "NavTitle":"سازمان راهداری و حمل و نقل جاده ای مجتمع های خدماتی رفاهی بین راهی و تیرپارک ها",
+  "OverFlowSearch": "جستجو",
+  "Nav": {
+    "LoginAsManager": "ورود به عنوان مدیر سیستم",
+    "Language": "زبان",
+    "PrayerTimes": "اوقات شرعی",
+    "EssentialmPhoneNumbers": "شماره تلفن های ضروری",
+    "SubmitComplaint": "ثبت شکایت",
+    "TrackComplaint": "پیگیری شکایت",
+    "ShareWithFriends": "دعوت از دوستان",
+    "Rating/ErrorReport": "ثبت نظر/گزارش خطا",
+    "Help": "راهنما",
+    "AboutUs": "درباره ما",
+    "Exit": "خروج"
+  },
+  "BottomNavigation":{
+    "Profile": "پروفایل",
+    "Favorite": "علاقه مندی ها",
+    "Edit": "ویرایش",
+    "141": "141"
+  },
+  "LoginForm":{
+    "EnterPhone": "شماره موبایل خود را وارد کنید",
+    "BtnSendCode": "ارسال کد تایید",
+    "EnterCode": "کد ارسال شده را وارد نمایید",
+    "TimeOutDesc": "در صورت عدم دریافت پیامک دکمه ی ارسال مجدد را انتخاب کنید",
+    "BtnLogIn": "ورود",
+    "BtnSendAgain": "ارسال مجدد",
+    "BtnChangePhone": "تغییر شماره",
+    "EmptyError": "شماره وارد نشده است"
+  },
+  "SearchSheet":{
+    "NearMe": "نزدیک من",
+    "Near": "محل دیگر",
+    "Between": "بین مسیر",
+    "SearchRadius": "شعاع جستجو :",
+    "EnterCityName": "شهر مورد نظر",
+    "ChooseOnMap": "انتخاب روی نقشه",
+    "EnterFirstCityName": "نام شهر مبدا",
+    "EnterSecondCityName": "نام شهر مقصد",
+    "SelectServices": "لطفا خدمات مورد نظر را انتخاب نمایید",
+    "Search": "جستجو",
+    "EmptyCityError": "شهر را انتخاب کنید",
+    "EmptyFirstCityError": "شهر مبدا را انتخاب کنید",
+    "EmptySecondCityError": "شهر مقصد را انتخاب کنید"
+  },
+  "ManagerLoginDialog":{
+  "HeaderText": "مخصوص کارکنان سازمان راهداری و حمل و نقل جاده ای",
+  "ScreenName":"نام نمایشی",
+  "Password":"گذرواژه",
+  "SignIn":"ورود به سیستم"
+
+},
+  "LanguageDialog": {
+    "Persian": "فارسی",
+    "Arabic": "عربی",
+    "English": "انگلیسی"
+  },
+  "PrayerTimeDialog": {
+    "PrayerTime": "اوقات شرعی",
+    "Fajr": "اذان صبح",
+    "Sunrise": "طلوع آفتاب",
+    "Dhuhr": "اذان ظهر",
+    "Asr": "عصر",
+    "Sunset": "غروب آفتاب",
+    "Maghrib": "اذان مغرب",
+    "Isha": "عشا",
+    "Midnight": "نیمه شب شرعی"
+  },
+
+  "EssentialPhonesDialog": {
+    "RoadInfos": "اطلاع رسانی راه های کشور",
+    "InformationMinistry": "ستاد خبری وزارت اطلاعات",
+    "Emergency": "اورژانس",
+    "WeatherInfos": "سازمان هواشناسی",
+    "Police": "پلیس",
+    "IranKhodroCarService": "امداد خودرو ایران خودرو",
+    "IranKhodroCarService": "امداد خودرو سایپا",
+    "MidwayServices": "ستاد مرکزی هماهنگی خدمات سفر",
+    "Fireman": "آتش نشانی",
+    "RailRoad": "اطلاعات راه آهن",
+    "FirstAid": "ندای امداد جمعیت هلال احمر",
+    "FlightInfos": "اطلاعات پروازهای کشور",
+    "ImamKhomeyniAirportFlightInfos": "اطلاعات پرواز فرودگاه امام خمینی"
+  },
+  "SubmitComplaintDialog": {
+    "AreaName": "نام مجتمع",
+    "SelectFromMap": "انتخاب از روی نقشه",
+    "ManagerMobile": "موبایل مدیر",
+    "Email": "پست الکترونیک",
+    "Title": {
+      "Title": "عنوان",
+      "PrayerRoom": "نمازخانه",
+      "W.C": "سرویس بهداشتی",
+      "RestFacilities": "امکانات رفاهی",
+      "Others": "سایر موارد"
+    },
+    "Description": "توضیح",
+    "AddImage": "بارگذاری مستند تصویری تخلف",
+    "Submit": "ثبت",
+    "Success" : "شکایت شما ثبت شد. کد پیگیری :",
+    "Close" : "بستن"
+  },
+  "TrackComplaint": {
+    "ComplaintFrom": "شکایت از ",
+    "Area": "مجتمع ",
+    "WithTrackingCode": "با کد پیگیری ",
+    "State": "وضعیت : ",
+    "Result": "نتیجه بررسی : ",
+    "NoComplaints": "شکایتی یافت نشد"
+  },
+  "SubmitCommentDialog": {
+    "VerySatisfied": "خوشحال",
+    "Satisfied": "راضی",
+    "NotBad": "بد نیست",
+    "DisSatisfied": "ناراضی",
+    "VeryDisSatisfied": "ناراحت",
+    "CallNumber": "شماره تماس",
+    "Opinion": "نظر خود را درباره ی برنامه بنویسید",
+    "Send": "ارسال"
+  },
+  "FillProfileDialog": {
+    "HeaderText": "پروفایل خود را تکمیل کنید",
+    "FirstName": "نام",
+    "LastName": "نام خانوادگی",
+    "Save": "ذخیره"
+  },
+  "Profile": {
+    "RemovePhoto": "حذف تصویر",
+    "Rating": "نظرسنجی",
+    "Favorites": "علاقه مندی ها",
+    "Areas": "مجتمع ها",
+    "ChangeSpecification": "ویرایش مشخصات",
+    "MyServiceAreas": "مجتمع های من",
+    "MyInterestedAreas": "مکان های مورد علاقه من",
+    "ReceivedComplaints": "شکایت های رسیده",
+    "Exit": "خروج"
+  },
+  "AreaDetail": {
+    "Side" : "سمت",
+    "Distance" : "فاصله تا شما",
+    "Directions" : "مسیریابی",
+    "MoreInfo" : "اطلاعات بیشتر",
+    "Rating" : "بدون نظر",
+    "DistanceToYou": "فاصله تا شما",
+    "Kilometers": "کیلومتر",
+    "Close": "بستن"
+  },
+  "ServiceAreaDetailsDialog": {
+    "ServiceArea" : "مجتمع خدمات رفاهی",
+    "TirPark" : "تیرپارک",
+    "Save" : "ذخیره",
+    "Rating" : "نظرسنجی",
+    "Edit" : "ویرایش",
+    "Share": "اشتراک",
+    "ManagerName": "نام مدیر",
+    "Axis": "محور",
+    "Kilometers": "کیلومتر",
+    "ContactManager": "ارتباط با مدیر مجتمع"
+  },
+  "AreaRatingDialog": {
+    "Title": "از خدمات این مجموعه چقدر رضایت دارید؟",
+    "Comment" : "ثبت نظر",
+    "YourRating" : "نظر شما",
+    "Confirm" : "تایید"
+  },
+  "SnackBar": {
+    "PleaseLogin": "به سیستم وارد شوید",
+    "PleaseLoginAsManager": "به عنوان مدیر به سیستم وارد شوید",
+    "EnterConfirmCode": "کد تایید را وارد کنید",
+    "SelectArea": "مجتمع را انتخاب کنید",
+    "PhotoAdded": "عکس اضافه شد",
+    "PhotosAdded": "عکس ها اضافه شدند",
+    "AreaAdded": "مجتمع با موفقیت اضافه شد",
+    "AreaDeleted": "مجتمع با موفقیت حذف شد",
+    "NetworkError": "خطای ارتباط با سرور",
+    "OperationError": "خطا در انجام عملیات",
+    "RequireFields": "موارد الزامی را انتخاب یا پر کنید",
+    "DetailsEdited": "اطلاعات ویرایش شد",
+    "RegisterVote": "رای شما ثبت شد",
+    "DeletePhoto": "عکس با موفقیت حذف شد",
+    "ServicesEdited": "سرویس ها با موفقیت ویرایش شد",
+    "FavoriteAdded": "به علاقه مندی ها اضافه شد",
+    "FavoriteDeleted": "از علاقه مندی ها حذف شد",
+    "EditAccess": "دسترسی به ویرایش یا حذف ندارید",
+    "TurnOnLocation": "موقعیت مکانی خود را روشن کنید"
+  },
+  "MyAreasDialog": {
+    "Side": "سمت : ",
+    "Edit" : "ویرایش"
+  },
+  "MyFavoriteAreasDialog": {
+    "Side": "سمت : ",
+    "Delete" : "حذف",
+    "Show" : "نمایش",
+    "NoArea": "َمجتمعی یافت نشد"
+  },
+  "RoutingDialog": {
+    "NoDirection": "مسیری یافت نشد",
+    "NoLocation": "موقعیت مکانی کاربر یافت نشد",
+    "Time": "زمان",
+    "Distance": "فاصله(کیلومتر)",
+    "Close": "بستن"
+  }
+}
